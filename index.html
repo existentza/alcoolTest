@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alcool Test</title>
+</head>
+<body>
+    <h1>Alcool Test</h1>
+    <h3 id="consumeTime">T:</h3>
+    <div class="texts">
+        <h3 class="text">Inserisci qui i tuoi parametri: </h3>
+        <h3 class="text">Unità alcoliche</h3>
+        <h3 class="text">Unità consumate</h3>
+    </div>
+    <div class="params">
+        <div class="units">
+            <label for="body-weight">Peso: </label>
+            <input id="body-weight" type="number">
+            <label for="Sesso">Sesso: </label>
+            <select name="Sesso" id="gender">
+                <option value="male">Maschio</option>
+                <option value="female">Femmina</option>
+            </select>
+            <label for="Stomaco">Stomaco: </label>
+            <select name="Stomaco" id="stomach">
+                <option value="full">Pieno</option>
+                <option value="empty">Vuoto</option>
+            </select>
+        </div>
+        <div class="units" id="alcool-units">
+            <button class="unit" id="select">birra analcolica</button>
+            <button class="unit">birra leggera</button>
+            <button class="unit">birra normale</button>
+            <button class="unit">birra speciale</button>
+            <button class="unit">birra doppio malto</button>
+            <button class="unit">vino</button>
+            <button class="unit">vini liquorosi-aperitivi</button>
+            <button class="unit">digestivi</button>
+            <button class="unit">superalcolici</button>
+            <button class="unit">bollicine</button>
+            <button class="unit">ready to drink</button>
+        </div>
+        <div class="units">
+            <label id="selectedUnitLabel" for="alcool-unit">birra analcolica consumate: </label>
+            <input class="alcool-unit" id="selectedUnitAmount" type="number" value="0">
+
+            <div id="result">
+                <h3>Alcolemia stimata: 0 g/L</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
