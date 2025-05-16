@@ -27,20 +27,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-.texts {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.text {
-    width: 400px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #444;
-}
-
 .params {
     display: flex;
     gap: 30px;
